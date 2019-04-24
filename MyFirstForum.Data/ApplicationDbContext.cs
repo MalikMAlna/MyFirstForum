@@ -12,6 +12,8 @@ namespace MyFirstForum.Data
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
-
+        public DbSet<Forum> Forums { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<PostReply> Replies { get; set; }
     }
 }

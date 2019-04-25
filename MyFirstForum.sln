@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstForum", "MyFirstForu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstForum.Data", "MyFirstForum.Data\MyFirstForum.Data.csproj", "{D7604A60-6356-4DE5-B091-0B1DAADB2619}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstForum.Service", "MyFirstForum.Service\MyFirstForum.Service.csproj", "{3F7427D8-6164-4A4C-B2A5-ECB02BAD21E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D7604A60-6356-4DE5-B091-0B1DAADB2619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7604A60-6356-4DE5-B091-0B1DAADB2619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7604A60-6356-4DE5-B091-0B1DAADB2619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7427D8-6164-4A4C-B2A5-ECB02BAD21E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7427D8-6164-4A4C-B2A5-ECB02BAD21E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7427D8-6164-4A4C-B2A5-ECB02BAD21E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7427D8-6164-4A4C-B2A5-ECB02BAD21E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

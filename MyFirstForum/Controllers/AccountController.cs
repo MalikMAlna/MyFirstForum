@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MyFirstForum.Data.Models;
 using MyFirstForum.Models;
 using MyFirstForum.Models.AccountViewModels;
 using MyFirstForum.Services;

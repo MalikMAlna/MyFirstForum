@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyFirstForum.Data\MyFirstForum.Data.csproj" />
+    <ProjectReference Include="..\MyFirstForum\MyFirstForum.csproj" />
   </ItemGroup>
 
 </Project>

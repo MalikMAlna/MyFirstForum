@@ -35,6 +35,9 @@ namespace MyFirstForum.Controllers
             return View(model);
         }
 
-
+        public IActionResult Topic(int Id)
+        {
+            var forum = _forumService.GetById(Id);
+        }
     }
 }

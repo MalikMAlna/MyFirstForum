@@ -3,6 +3,7 @@ using MyFirstForum.Data;
 using MyFirstForum.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace MyFirstForum.Service
@@ -39,7 +40,14 @@ namespace MyFirstForum.Service
 
         public Forum GetById(int Id)
         {
-            throw new NotImplementedException();
+            var forum = _context.Forums.Where(f => f.Id == Id)
+                .Include(f => f.Posts)
+                    .ThenInclude(p => p.User)
+                .Include(f => f.Posts)
+                    .ThenInclude(p => p.Replies)
+                        .ThenInclude(r => r.User)
+                .FirstOrDefault();
+            return forum;
         }
 
         public Task UpdateForumDescription(int forumId, string newDescription)

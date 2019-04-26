@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyFirstForum.Data\MyFirstForum.Data.csproj" />
+    <ProjectReference Include="..\MyFirstForum.Service\MyFirstForum.Service.csproj" />
   </ItemGroup>
 
 </Project>

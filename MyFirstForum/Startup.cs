@@ -4,9 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MyFirstForum.Services;
 using MyFirstForum.Data.Models;
 using MyFirstForum.Data;
+using MyFirstForum.Services;
+using MyFirstForum.Service;
 
 namespace MyFirstForum
 {
@@ -31,6 +32,7 @@ namespace MyFirstForum
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IForum, ForumService>();
 
             services.AddMvc();
         }

@@ -38,6 +38,8 @@ namespace MyFirstForum.Controllers
         public IActionResult Topic(int Id)
         {
             var forum = _forumService.GetById(Id);
+            var posts = _postServive.GetFilteredPosts(Id); 
+
 
             var postListings = 
         }
